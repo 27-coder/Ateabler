@@ -1,0 +1,4 @@
+# Build in a fresh virtual environment; do not install backend[test] or [worker].
+# Qt 6.8 retains the macOS 12 / Windows 10 / Ubuntu 22.04 desktop baseline.
+PySide6-Essentials==6.8.3
+pyinstaller==6.22.3

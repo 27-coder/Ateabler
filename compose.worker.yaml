@@ -1,0 +1,56 @@
+name: ateable-worker
+
+services:
+  tor:
+    build:
+      context: .
+      dockerfile: Dockerfile.tor
+    restart: unless-stopped
+    volumes:
+      - tor-data:/var/lib/tor
+      - type: bind
+        source: ${ATEABLE_TOR_EXTRA_CONFIG:-./docker/tor-extra.empty}
+        target: /etc/tor/ateable-extra.conf
+        read_only: true
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    depends_on:
+      tor:
+        condition: service_healthy
+    command: ["ateable-worker"]
+    environment:
+      ATEABLE_CONFIG_DIR: /data/config
+      ATEABLE_COORDINATOR_URL: ${ATEABLE_COORDINATOR_URL:-}
+      ATEABLE_PAIR_KEY: ${ATEABLE_PAIR_KEY:-}
+      ATEABLE_WORKER_NAME: ${ATEABLE_WORKER_NAME:-Remote worker}
+      ATEABLE_WORKER_ID: ${ATEABLE_WORKER_ID:-}
+      ATEABLE_WORKER_TOKEN: ${ATEABLE_WORKER_TOKEN:-}
+      ATEABLE_WORKER_CREDENTIALS: /data/device-credentials.json
+      ATEABLE_OUTPUT_DIR: /downloads
+      ATEABLE_WORKER_CONCURRENCY: ${ATEABLE_WORKER_CONCURRENCY:-1}
+      ATEABLE_NETWORK_MODE: ${ATEABLE_NETWORK_MODE:-tor}
+      ATEABLE_TOR_PROXY: ${ATEABLE_TOR_PROXY:-socks5h://tor:9050}
+      ATEABLE_PROXY: ${ATEABLE_PROXY:-}
+      ATEABLE_COOKIES_FILE: ${ATEABLE_COOKIES_FILE:-}
+      ATEABLE_PUID: ${ATEABLE_PUID:-1000}
+      ATEABLE_PGID: ${ATEABLE_PGID:-1000}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - type: bind
+        source: ${ATEABLE_WORKER_DATA_PATH:-./worker-data}
+        target: /data
+      - type: bind
+        source: ${ATEABLE_OUTPUT_PATH:-./downloads}
+        target: /downloads
+      - type: bind
+        source: ${ATEABLE_COOKIES_PATH:-./cookies}
+        target: /cookies
+        read_only: true
+
+volumes:
+  tor-data:

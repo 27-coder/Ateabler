@@ -1,0 +1,2 @@
+# Optional operator-owned Tor directives are mounted over this file.
+# Ateable ships no bridge addresses and performs no circuit rotation.

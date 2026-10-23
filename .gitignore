@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+*.pem
+
+# env files (keep the documented templates)
+.env*
+!.env.example
+!.env.worker.example
+
+/dist/
+/build/
+/release/
+/outputs/
+/work/
+
+# Ateable runtime state, device credentials, and downloaded media
+/.venv/
+/data/
+/downloads/
+/cookies/
+/inbox/
+/worker-data/
+/backend/.pytest_cache/
+/backend/.ruff_cache/
+/.ruff_cache/
+/backend/.coverage
+**/__pycache__/
+*.py[cod]
+
+# Local development, test caches and private connection/session material
+**/.pytest_cache/
+**/.ruff_cache/
+**/*.egg-info/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.key
+*.p12
+*.pfx
+**/worker-credentials.json
+**/session.json
+/state/
+/config/
+/backend/.venv/
+/node_modules/

@@ -1,0 +1,32 @@
+FROM denoland/deno:bin-2.8.1 AS deno
+
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    DENO_DIR=/var/cache/deno
+
+COPY --from=deno /deno /usr/local/bin/deno
+
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends ca-certificates ffmpeg gosu tini \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/ateable
+COPY LICENSE THIRD_PARTY_NOTICES.md ./
+COPY backend/ ./backend/
+RUN python -m pip install --no-cache-dir './backend[worker]'
+
+RUN groupadd --system ateable \
+    && useradd --system --gid ateable --home-dir /opt/ateable ateable \
+    && mkdir -p /data /downloads /cookies "${DENO_DIR}" \
+    && chown -R ateable:ateable /opt/ateable /data /downloads /cookies "${DENO_DIR}"
+
+COPY docker/backend-entrypoint.sh /usr/local/bin/ateable-entrypoint
+RUN chmod 0755 /usr/local/bin/ateable-entrypoint
+
+EXPOSE 8765
+
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/ateable-entrypoint"]
+CMD ["ateable", "serve", "--host", "0.0.0.0", "--port", "8765"]

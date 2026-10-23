@@ -1,0 +1,20 @@
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends ca-certificates gosu tini \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/ateable
+COPY LICENSE THIRD_PARTY_NOTICES.md ./
+COPY backend/ ./backend/
+RUN python -m pip install --no-cache-dir ./backend
+
+COPY docker/controller-entrypoint.sh /usr/local/bin/ateable-controller-entrypoint
+RUN chmod 0755 /usr/local/bin/ateable-controller-entrypoint
+EXPOSE 8765
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/ateable-controller-entrypoint"]
+CMD ["ateable", "serve", "--host", "0.0.0.0", "--port", "8765"]

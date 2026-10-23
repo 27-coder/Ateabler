@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Ateable
+Comment=Manage local and remote media downloads
+Exec=Ateable
+Icon=folder-download
+Terminal=false
+Categories=Network;
+Keywords=download;audio;video;queue;
+StartupNotify=true
+X-Ateable-Managed=true

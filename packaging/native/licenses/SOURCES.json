@@ -1,0 +1,751 @@
+[
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/AFL-2.1.txt",
+    "sha256": "93bb4f7417aa775bab9026cc3d0af28aeb64451fc5a8ec651876785edd8eaf9b",
+    "bytes": 8948
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Apache-2.0.txt",
+    "sha256": "e3ba223bb1423f0aad8c3dfce0fe3148db48926d41e6fbc3afbbf5ff9e1c89cb",
+    "bytes": 10398
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/BSD-2-Clause.txt",
+    "sha256": "8fda146749ca071ac9cdce2e24d25444676ea48d1f9dccc2b7c15c054b717db8",
+    "bytes": 1276
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/BSD-3-Clause.txt",
+    "sha256": "9f0490f18656c6f2435bd14f603ef0c96434d1825615363dce43abb42ed1dcce",
+    "bytes": 1469
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/BSD-4-Clause.txt",
+    "sha256": "83faa0d205c316ce3efeafee465b6a165914fb29595968c08dc6437021b7b6fd",
+    "bytes": 1672
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/BSL-1.0.txt",
+    "sha256": "3abd6471b9a9a08d65ce771143f8e278bb4c1aeb10c1c2d476935a6b049653f5",
+    "bytes": 1340
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Bitstream-Vera.txt",
+    "sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+    "bytes": 8816
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/CC0-1.0.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "bytes": 7048
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/FTL.txt",
+    "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1",
+    "bytes": 6743
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/GFDL-1.3-no-invariants-only.txt",
+    "sha256": "110535522396708cea37c72a802c5e7e81391139f5f7985631c93ef242b206a4",
+    "bytes": 22955
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/GPL-2.0-only.txt",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "bytes": 18092
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/GPL-2.0-or-later.txt",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "bytes": 18092
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/GPL-3.0-only.txt",
+    "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "bytes": 35147
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/HPND.txt",
+    "sha256": "67ac968431270291f5e9cd3ed76705e1169f57082ee102093b2543b28cef63cf",
+    "bytes": 1188
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/IJG.txt",
+    "sha256": "1cb448f5e2e6d3aca60943f4eee1a04675628dc0266a074a42bc1560ebc28d61",
+    "bytes": 1815
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/IPL-1.0.txt",
+    "sha256": "d5328e672fb1bff47ee18e890784541453380081cf3771bb7b3c06fc19c7d503",
+    "bytes": 11789
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Imlib2.txt",
+    "sha256": "8846f2baba1a7f4c36f7ca19a923a000d8a21afa37cf0fe006f6ce88a6058a89",
+    "bytes": 1986
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LGPL-3.0-only.txt",
+    "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+    "bytes": 7651
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Libpng.txt",
+    "sha256": "58fe669792f9b4e0740bf75ecfe90b5326128bb2ce7e27e1c342abd9db4d8ea6",
+    "bytes": 4120
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception.txt",
+    "sha256": "0526625fcc746a42d3f19a0ab357d3dc8479fdbe3bfd168825498f50215c7a63",
+    "bytes": 1852
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LicenseRef-ICC-License.txt",
+    "sha256": "9e34ff47b3a44814e183342e7e198d127a6740e29d20e8381fba7688dafc79dd",
+    "bytes": 463
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LicenseRef-Lcs-Telegraphics.txt",
+    "sha256": "c10225ebbd5191bfdd761b0d7752c785f2453ab665d6c454473fb12d254668aa",
+    "bytes": 139
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LicenseRef-Qt-Commercial.txt",
+    "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700",
+    "bytes": 462
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LicenseRef-SHA1-Public-Domain.txt",
+    "sha256": "65d86b8ec6b1cd8b8f6e64fd8710274ba00d6a3c520e00dfdcd1c3d2071f3305",
+    "bytes": 144
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Linux-syscall-note.txt",
+    "sha256": "3f9e477523febab58de8b716ccfbcf02e6ef1c8e7728953905e8558637abe2a9",
+    "bytes": 624
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/MIT-Khronos-old.txt",
+    "sha256": "3c58021633974f9ed3c3d445a374240a5244fd039628f4d7f6f3e674bc8e6694",
+    "bytes": 1306
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/MIT-open-group.txt",
+    "sha256": "c55d2ab72d8a4f9e9cd8fbd1379268e575e8cfa16874affa5899b75a6d754514",
+    "bytes": 897
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/MIT.txt",
+    "sha256": "d040359701c01996a017d5c515678929cd1b0625e64cb86db44025fbb6cdf1fc",
+    "bytes": 1111
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/MPL-2.0.txt",
+    "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+    "bytes": 16726
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Qt-GPL-exception-1.0.txt",
+    "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2",
+    "bytes": 965
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/SPL-1.0.txt",
+    "sha256": "f58f2f30909982445f97f1a61667261920a7caeab21ef5bea1b740f5b144d141",
+    "bytes": 23547
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Unicode-3.0.txt",
+    "sha256": "80bb6294022d8764adb36a9d65ebb6bd94efb1865918a71e31e6c247607d7634",
+    "bytes": 1995
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/X11.txt",
+    "sha256": "e2936c6509784b4f0ec27bac74182393866fad9422b29a70e085ff14aba87193",
+    "bytes": 1338
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Xerox.txt",
+    "sha256": "b6bc52205d01e10cf43dbb7b8aec06dcaa3b21d1486e7c9c0bec329ee8244d8d",
+    "bytes": 965
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Zlib.txt",
+    "sha256": "d7e3139972874dc8abdbbfce27ec1e6f942b28279dd7d27453630a8b4610e080",
+    "bytes": 1465
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/blessing.txt",
+    "sha256": "592db1199aab67aafe4515db9808b420db122083807c5329b2f061951e79acbe",
+    "bytes": 244
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/libpng-2.0.txt",
+    "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+    "bytes": 5345
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/REUSE.toml",
+    "sha256": "264a95dab47c225bf806e2953013e5696c10287948a9797990d81525ab09f20f",
+    "bytes": 3942
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/D3D12MemoryAllocator/LICENSE.txt",
+    "sha256": "1b3941c52b26d42c510afbdf205a8b96a6d64f5a7b8ebff0287979fd91dfd52f",
+    "bytes": 1099
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/D3D12MemoryAllocator/qt_attribution.json",
+    "sha256": "182d7e5ed90dc592b01a50635c85f4039ca6f25f88ec4700b08faf6f07fda09e",
+    "bytes": 727
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/VulkanMemoryAllocator/LICENSE.txt",
+    "sha256": "846d97c8b74ccaa92b9ad031140a04363b3b3985f318094552f297b8bda1c68e",
+    "bytes": 1099
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/VulkanMemoryAllocator/qt_attribution.json",
+    "sha256": "d00a867e3df29e108bd60194dcad6da8d9ea89d185c8afd93a00429628156346",
+    "bytes": 699
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/android/LICENSE",
+    "sha256": "4a51cf7f724f51bedb5fa4f9583a2762f1db8d05e43a577e2487c7aab2fdce18",
+    "bytes": 525
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/android/qt_attribution.json",
+    "sha256": "120710d661892ceb44a94556c56998795372334674c79710947282e8279ef415",
+    "bytes": 373
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/blake2/COPYING",
+    "sha256": "4103f471877ed0bae500752c5fcd7ecca409d4a4a8dc2ad40437daba60f1a2bc",
+    "bytes": 17914
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/blake2/qt_attribution.json",
+    "sha256": "bab552307bdd03ed9a4cf7f8f1397c3d18d4dbee19ee576033284104785245be",
+    "bytes": 926
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/double-conversion/LICENSE",
+    "sha256": "4af93c12062c58058378de2397dc1c92bbff9ddfb1d583a01c84127557ce97ca",
+    "bytes": 1527
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/double-conversion/qt_attribution.json",
+    "sha256": "b68e633437cce59dec970776f5c4d3b9fc39c5d9edaec03e8894591a6721d1ed",
+    "bytes": 771
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/easing/LICENSE",
+    "sha256": "92fac99458f1754b73edf50f9c9983e0efaa06ad96e2afd5e538c79f45b4b191",
+    "bytes": 1505
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/easing/qt_attribution.json",
+    "sha256": "77d67a1db5882bb0b9a1278b014885bee45a4c059d1da9f835b6da5bc4b9c93d",
+    "bytes": 471
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/forkfd/LICENSE",
+    "sha256": "d0d683ae18e78fbef90eb41168fb781920da2d12bf80704490f0882915c18ae0",
+    "bytes": 1148
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/forkfd/qt_attribution.json",
+    "sha256": "525fd890017a3966f542da42a9ff0ca2a0d71bc45f80a4871de3e0bd0f612612",
+    "bytes": 493
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/freetype/BDF-LICENSE.txt",
+    "sha256": "e4e792f29e66750f2e410fd7b50a567652c180f6ee15e1a4dfa0bb5cde524537",
+    "bytes": 2305
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/freetype/LICENSE.txt",
+    "sha256": "bf543cdda11864477b8d2ca2aa9afc2aaa8f9133461b4d962ed6ec73646256a1",
+    "bytes": 26234
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/freetype/PCF-LICENSE.txt",
+    "sha256": "6938597bfdeca0db191a8f9ede52eaf2482c2c71a0094c084747a1235f9958fe",
+    "bytes": 2218
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/freetype/ZLIB-LICENSE.txt",
+    "sha256": "2b1f5d615382a151af3eb71462ad17d89e2efee8fa7664058d35d3d9237ebb19",
+    "bytes": 962
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/freetype/qt_attribution.json",
+    "sha256": "3bb2eabc9379310a420ec2461e85a3224396cf8ba15fd53591d770ca16715553",
+    "bytes": 5328
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/gradle/LICENSE",
+    "sha256": "9536d88ea948603d18e232a13f5958d67807cd80828036b082bff171d2cf0703",
+    "bytes": 23622
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/gradle/qt_attribution.json",
+    "sha256": "d8950522e452e35c44d3660ddefff2f28f2dd342b500a4acb8fe1b9997627849",
+    "bytes": 581
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/harfbuzz-ng/COPYING",
+    "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+    "bytes": 1971
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/harfbuzz-ng/qt_attribution.json",
+    "sha256": "c998c9784a4a0021c2f68632a9e8cd5589dbc7f7336feeb156a4240b6b32d718",
+    "bytes": 1646
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/iaccessible2/LICENSE",
+    "sha256": "603fb8e9a443c95cb56c0e458a0ad17fdcadfc5bbb7e580d2199ee0145882746",
+    "bytes": 1668
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/iaccessible2/qt_attribution.json",
+    "sha256": "fc3b6c3aceeb15b92302e1375aa8f48a692b39ce5250458e88ae137cef2922c6",
+    "bytes": 932
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/icc/LICENSE.txt",
+    "sha256": "9e34ff47b3a44814e183342e7e198d127a6740e29d20e8381fba7688dafc79dd",
+    "bytes": 463
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/icc/qt_attribution.json",
+    "sha256": "509da9bd2b3f769c730aa4627b1080d65f39b0ecd4130111c9e1122e13cd35b5",
+    "bytes": 775
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libjpeg/COPYRIGHT.txt",
+    "sha256": "f26a2c0b6c1ab7e40444de31cc5b112a534cc589d6fd9b93620054e9692b81c6",
+    "bytes": 580
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libjpeg/LICENSE",
+    "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+    "bytes": 5620
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libjpeg/ijg-license.txt",
+    "sha256": "1cb448f5e2e6d3aca60943f4eee1a04675628dc0266a074a42bc1560ebc28d61",
+    "bytes": 1815
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libjpeg/qt_attribution.json",
+    "sha256": "874587f89655d70e9926048b2c9f4f2c15f8795dc64e4a492f753cee06ed6432",
+    "bytes": 859
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libpng/LICENSE",
+    "sha256": "16d9daaafbf63a31a5bdc91d4600972548fef5aaa1244202393288dbd079c49a",
+    "bytes": 5345
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libpng/qt_attribution.json",
+    "sha256": "2970938574023e02b60b5b7c75d21e11b7e4476cdc2c1a5386b01ac5bc678943",
+    "bytes": 1763
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libpsl/PSL-LICENSE.txt",
+    "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+    "bytes": 16726
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libpsl/qt_attribution.json",
+    "sha256": "52d2286e673cdc88dd0b02db46352f994dac2c359e4632644dc4d595cf144ce7",
+    "bytes": 2498
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/libpsl/src/LICENSE.chromium",
+    "sha256": "1d7f52747a9169751cdf2641a8299c0098e9ecdf9429296ffd55bdb14c9ed5b3",
+    "bytes": 1664
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/md4/qt_attribution.json",
+    "sha256": "34bda63a2fcc23c83f2e5364ccd394553b4baa505b1f79ded9cc2161c56a9b4c",
+    "bytes": 574
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/md4c/LICENSE.md",
+    "sha256": "d30937367d5413e7eaa218b1640b8946ff76fd34d97152f6979fd96169d5d0fc",
+    "bytes": 1096
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/md4c/qt_attribution.json",
+    "sha256": "59098b9262ac268e73495cb1b1603b5c899d5c532db6ca96e69ffac7062445f5",
+    "bytes": 673
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/md5/qt_attribution.json",
+    "sha256": "20b0f1b17ccd1bd5e8d763b1cdca4b095b8f0c037644b5ee18154536b7d8425e",
+    "bytes": 446
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/pcre2/qt_attribution.json",
+    "sha256": "cb7ae8b37a3e8e1d2a20fbe44fc5306ed5cda404035a667fed56f7139636048e",
+    "bytes": 1915
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/pixman/LICENSE",
+    "sha256": "942c4f2a80394d3f53599b8382e9f27349b95c45d92b69b84f26d404f4dd74a5",
+    "bytes": 1092
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/pixman/qt_attribution.json",
+    "sha256": "f1dc159b63bf84a4c9c367e8ff79aa748b63f5fc622d5080c0a7ddd98ddc7ac7",
+    "bytes": 597
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/rfc6234/LICENSE",
+    "sha256": "7ccebd514aaabc86192f957d773cebf06577c12fe9f25ecd419c6cac5da7a14c",
+    "bytes": 1568
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/rfc6234/qt_attribution.json",
+    "sha256": "fa24413bdc5015fc7fc84297fa17d4c8a598f8f7c76b9495a6e6b26a77b4a324",
+    "bytes": 660
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/sha1/qt_attribution.json",
+    "sha256": "53cab2c771f7f7ffbf6a58ff759e5846b746e91d98dfe467d5145edf8cd7d306",
+    "bytes": 618
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/sha3/BRG_ENDIAN_LICENSE",
+    "sha256": "2fed6f252ca4a7e813811de3cd3cd08183edd4138bdee909410ef6eee394e82c",
+    "bytes": 645
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/sha3/CC0_LICENSE",
+    "sha256": "1f2786e2c5befeb4dcba6638db6528bf96ef5d2cf24bc85ab5a81ef00abef59d",
+    "bytes": 7013
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/sha3/qt_attribution.json",
+    "sha256": "c14f8c923bdde00e14d52ac826475f29c690b0615337e641d818d3243eb26a87",
+    "bytes": 2357
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/siphash/qt_attribution.json",
+    "sha256": "8614947dfc0ca1d21aad2f88b4400598262ab8c08aa87c4f7acc0c2de6e5619e",
+    "bytes": 793
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/sqlite/qt_attribution.json",
+    "sha256": "0bb4312dfe1e3896713954accedb0ed50453268f0983a7c10fa5df038d2b7e89",
+    "bytes": 799
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/tinycbor/LICENSE",
+    "sha256": "3c6ba0b5bfa7830505301ffb336a17b0748e0d61c4d34216e9dc98f10e40395e",
+    "bytes": 1074
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/tinycbor/qt_attribution.json",
+    "sha256": "3cd7042c743868aa67d792b85cd1e113b02cfa5273ea727a5a40915c9163b377",
+    "bytes": 691
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/wasm/DEJAVU-LICENSE",
+    "sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+    "bytes": 8816
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/wasm/qt_attribution.json",
+    "sha256": "2019d37665bfb2ce7d4931d0bdf7427ea178919399cf37c0fef14a229144936b",
+    "bytes": 730
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/wintab/qt_attribution.json",
+    "sha256": "b879ea91b719531d45e1cfe33d2241d060a9260200bd91a09ada074b16063f9c",
+    "bytes": 602
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/xcb/LICENSE",
+    "sha256": "82775191bc05f85b40404d77bb69b1edeaeb4033f48387e9e5eab4dd67f5d6f1",
+    "bytes": 1246
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/xcb/qt_attribution.json",
+    "sha256": "8bae8861957bc0168d586d24da6e8e93edceb11796811c5f614d211f4674d437",
+    "bytes": 825
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/zlib/LICENSE",
+    "sha256": "d7e3139972874dc8abdbbfce27ec1e6f942b28279dd7d27453630a8b4610e080",
+    "bytes": 1465
+  },
+  {
+    "component": "QtBase",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/src/3rdparty/zlib/qt_attribution.json",
+    "sha256": "6a37eaf51d8ebb7bd19e01a9a2334da8557409acb520ef6d1813c6d742771030",
+    "bytes": 731
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/Apache-2.0.txt",
+    "sha256": "e3ba223bb1423f0aad8c3dfce0fe3148db48926d41e6fbc3afbbf5ff9e1c89cb",
+    "bytes": 10398
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/BSD-3-Clause.txt",
+    "sha256": "9f0490f18656c6f2435bd14f603ef0c96434d1825615363dce43abb42ed1dcce",
+    "bytes": 1469
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/GFDL-1.3-no-invariants-only.txt",
+    "sha256": "110535522396708cea37c72a802c5e7e81391139f5f7985631c93ef242b206a4",
+    "bytes": 22955
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/GPL-2.0-only.txt",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "bytes": 18092
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/GPL-3.0-only.txt",
+    "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "bytes": 35147
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/LGPL-3.0-only.txt",
+    "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+    "bytes": 7651
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/LicenseRef-Qt-Commercial.txt",
+    "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700",
+    "bytes": 462
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/LICENSES/Qt-GPL-exception-1.0.txt",
+    "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2",
+    "bytes": 965
+  },
+  {
+    "component": "QtForPython",
+    "version": "6.8.3",
+    "source": "https://raw.githubusercontent.com/qtproject/pyside-pyside-setup/v6.8.3/sources/pyside6/doc/commercial/index.rst",
+    "sha256": "b292a9bee764a68679e407f8772c6c193fcbbf0a6ae97c833dfd556cbe1fa21f",
+    "bytes": 10518
+  }
+]

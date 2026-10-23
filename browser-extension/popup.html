@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ate it on bucket</title><link rel="stylesheet" href="style.css"></head>
+<body class="popup"><main>
+  <div class="brand">ATEABLE <span>CAPTURE</span></div>
+  <h1>Ate it on bucket</h1>
+  <p class="intro">Save links now. Download them later on your connected computer.</p>
+  <section class="destination"><div class="eyebrow">CURRENT DESTINATION</div><strong id="destination">Choose a bucket in Settings</strong><div id="bucket" class="muted"></div><div id="controller" class="small muted"></div></section>
+  <div id="setup" class="notice">In Ateable Admin, open Buckets → Browser capture… and copy its token into Settings below.</div>
+  <div class="buttons"><button id="capture">Save current page URL</button><button id="collect" class="secondary">Collect links on this page</button></div>
+  <p class="small muted">Right-click a link, image, video, audio, or selected URLs to save it. A page scan captures at most 5,000 links.</p>
+  <section class="queue"><div class="queue-head"><h2>Waiting to reach Admin</h2><strong id="count">0 URLs</strong></div><p id="summary" class="small muted"></p><div id="groups"></div></section>
+  <p id="message" role="status" aria-live="polite" class="notice" hidden></p>
+  <div class="buttons compact"><button id="retry" class="secondary">Send queue now</button><button id="recover" class="secondary">Recover matching queue</button><button id="export" class="secondary">Export queued URLs</button></div>
+  <p id="recoveryHelp" class="small muted" hidden>Recovery verifies the current token and retries only its original bucket on this controller. Other destinations stay queued. Idempotency keys stay unchanged.</p>
+  <details><summary>Remove queued captures</summary><p class="small muted">Export first if you need these URLs. Clearing the browser queue does not remove URLs already delivered to a bucket.</p><label class="small" for="confirm">Type CLEAR to confirm</label><input id="confirm" autocomplete="off" placeholder="CLEAR"><button id="clear" class="danger secondary">Clear browser queue</button></details>
+  <footer><button id="settings" class="text-button">Settings &amp; destination</button><span id="success" class="small muted"></span></footer>
+</main><script type="module" src="popup.js"></script></body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ate it on bucket — Settings</title><link rel="stylesheet" href="style.css"></head>
+<body class="options"><main>
+  <div class="brand">ATEABLE <span>CAPTURE</span></div><h1>Choose your capture bucket</h1>
+  <p class="intro">Save links while you browse. Start their downloads later in Ateable Admin; the files stay on your download computer.</p>
+  <ol class="onboarding"><li>Open <strong>Ateable Admin</strong> on this computer.</li><li>Go to <strong>Buckets</strong>, choose Inbox or another bucket, then click <strong>Browser capture…</strong>.</li><li>Copy the bucket's capture token from that dialog, paste it below, and verify the destination.</li><li>Right-click a link or media item → <strong>Ate it on bucket</strong>. In Admin, use <strong>Download saved links</strong> when ready.</li></ol>
+  <form id="form">
+    <label for="controller">Local controller URL</label><input id="controller" type="url" required value="http://127.0.0.1:8765" spellcheck="false"><p class="help">HTTP loopback only: 127.0.0.1, localhost, or [::1]. Enter an origin, without a path. The controller must run on this browser's computer.</p>
+    <label for="token">Capture token from Admin</label><input id="token" type="password" required autocomplete="off" spellcheck="false" maxlength="2048"><label class="checkbox"><input id="showToken" type="checkbox"> Show token while editing</label><p class="help">Use the bucket capture token, not your administrator key. It only saves links to the chosen bucket.</p>
+    <label for="label">Destination label (optional)</label><input id="label" maxlength="120" placeholder="Use the bucket's actual name"><p class="help">A local label for the popup and right-click menu. The verified token determines the real bucket.</p>
+    <button id="save" type="submit">Verify bucket &amp; save</button>
+  </form>
+  <p id="message" class="notice" role="status" aria-live="polite" hidden></p>
+  <section class="destination"><div class="eyebrow">VERIFIED DESTINATION</div><strong id="destination">No bucket configured yet</strong><p id="target" class="small muted"></p></section>
+  <p class="small muted">Changing settings affects new captures. Existing queued URLs keep their original bucket and controller. To replace a rejected token, save a fresh token for that same bucket and choose <strong>Recover matching queue</strong> in the popup.</p>
+  <details><summary>What does the extension share?</summary><p class="small muted">Your explicit capture actions send selected URLs, optional titles and source-page URLs to Admin on this computer. The token authenticates those requests and stays in this browser's local extension storage. Firefox's data permissions disclose this token and the selected URL/page metadata. There is no history monitoring, background page scanning or media downloading. Page scans only read links in the current document; cross-origin frames, closed shadow roots, streaming manifests and undisclosed media URLs are not inspected.</p></details>
+</main><script type="module" src="options.js"></script></body>
+</html>

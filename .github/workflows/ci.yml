@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -e 'backend[desktop,test]' -r packaging/native/build-requirements.txt
+      - name: Install Qt platform libraries
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libxcb-cursor0 libxkbcommon-x11-0
+      - name: Check Python code
+        run: python -m ruff check --config backend/pyproject.toml backend scripts packaging
+      - name: Test Python code
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: python -m pytest backend/tests scripts/tests -q
+      - uses: actions/setup-node@v4
+        if: matrix.python == '3.12'
+        with:
+          node-version: "22"
+      - name: Test browser capture
+        if: matrix.python == '3.12'
+        env:
+          ATEABLE_TEST_PYTHON: python
+        run: node --test browser-extension/tests/*.test.js

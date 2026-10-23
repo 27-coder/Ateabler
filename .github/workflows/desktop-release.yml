@@ -1,0 +1,102 @@
+name: Desktop release artifacts
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install test dependencies
+        run: python -m pip install -e "backend[desktop,test]" -r packaging/native/build-requirements.txt
+      - name: Install Qt platform libraries
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libxcb-cursor0 libxkbcommon-x11-0
+      - name: Test backend and native packaging boundaries
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: python -m pytest backend/tests scripts/tests -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test browser capture
+        env:
+          ATEABLE_TEST_PYTHON: python
+        run: node --test browser-extension/tests/*.test.js
+
+  build:
+    needs: test
+    name: ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            target: linux-x86_64
+            dmg: ""
+          - os: ubuntu-24.04-arm
+            target: linux-arm64
+            dmg: ""
+          - os: windows-2022
+            target: windows-x86_64
+            dmg: ""
+          - os: macos-14
+            target: macos-arm64
+            dmg: "--dmg"
+          - os: macos-15-intel
+            target: macos-x86_64
+            dmg: "--dmg"
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install controller-only native build dependencies
+        run: python -m pip install -e "backend[desktop]" -r packaging/native/build-requirements.txt
+      - name: Verify dependency consistency
+        run: python -m pip check
+      - name: Install Linux Qt platform libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libxcb-cursor0 libxkbcommon-x11-0
+      - name: Build and smoke-test native applications
+        run: python scripts/build-native.py --output-dir release/native --work-dir build/native ${{ matrix.dmg }}
+      - name: Build browser capture packages
+        run: python scripts/build-browser-extension.py --output-dir release/extensions
+      - name: Upload unsigned packs and checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: ateable-native-${{ matrix.target }}
+          if-no-files-found: error
+          path: |
+            release/native/*
+            release/extensions/*
+
+  install-packs:
+    needs: test
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build Linux, Windows, and macOS source installer packs
+        run: python scripts/build-install-packs.py --output-dir release/install
+      - name: Upload source installer packs and checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: ateable-install-packs
+          if-no-files-found: error
+          path: release/install/*

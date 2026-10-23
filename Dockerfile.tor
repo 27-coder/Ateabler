@@ -1,0 +1,20 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends ca-certificates tor \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY docker/torrc /etc/tor/torrc
+COPY docker/tor-healthcheck.sh /usr/local/bin/tor-healthcheck
+
+RUN chmod 0755 /usr/local/bin/tor-healthcheck \
+    && mkdir -p /var/lib/tor \
+    && chown -R debian-tor:debian-tor /var/lib/tor
+
+USER debian-tor
+EXPOSE 9050
+
+HEALTHCHECK --interval=10s --timeout=15s --start-period=120s --retries=18 \
+    CMD ["/usr/local/bin/tor-healthcheck"]
+
+ENTRYPOINT ["tor", "-f", "/etc/tor/torrc"]

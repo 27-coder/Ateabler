@@ -1,0 +1,49 @@
+name: ateable
+
+services:
+  controller:
+    build:
+      context: .
+      dockerfile: Dockerfile.controller
+    restart: unless-stopped
+    environment:
+      ATEABLE_STATE_DIR: /data
+      ATEABLE_CONFIG_DIR: /data/config
+      ATEABLE_DATABASE_PATH: /data/ateable.db
+      ATEABLE_OUTPUT_DIR: /downloads
+      ATEABLE_HOST: 0.0.0.0
+      ATEABLE_PORT: 8765
+      ATEABLE_CONTROLLER_URL: ${ATEABLE_CONTROLLER_URL:-http://localhost:8765}
+      ATEABLE_ADMIN_KEY: ${ATEABLE_ADMIN_KEY:-}
+      ATEABLE_EMBEDDED_WORKER: "false"
+      ATEABLE_LOCAL_CONCURRENCY: ${ATEABLE_LOCAL_CONCURRENCY:-1}
+      ATEABLE_WORKER_TIMEOUT_SECONDS: ${ATEABLE_WORKER_TIMEOUT_SECONDS:-45}
+      ATEABLE_LEASE_SECONDS: ${ATEABLE_LEASE_SECONDS:-120}
+      ATEABLE_NETWORK_MODE: direct
+      ATEABLE_TOR_PROXY: ${ATEABLE_TOR_PROXY:-socks5h://tor:9050}
+      ATEABLE_PROXY: ${ATEABLE_PROXY:-}
+      ATEABLE_PUID: ${ATEABLE_PUID:-1000}
+      ATEABLE_PGID: ${ATEABLE_PGID:-1000}
+    ports:
+      - "${ATEABLE_BIND_ADDRESS:-127.0.0.1}:${ATEABLE_API_PORT:-8765}:8765"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - type: bind
+        source: ${ATEABLE_DATA_PATH:-./data}
+        target: /data
+      - type: bind
+        source: ${ATEABLE_INPUT_PATH:-./inbox}
+        target: /input
+        read_only: true
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/api/health', timeout=2)"
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 10s
+

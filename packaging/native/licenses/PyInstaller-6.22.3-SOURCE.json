@@ -1,0 +1,7 @@
+{
+  "component": "PyInstaller",
+  "version": "6.22.3",
+  "source": "https://raw.githubusercontent.com/pyinstaller/pyinstaller/v6.22.3/COPYING.txt",
+  "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64",
+  "bytes": 32604
+}

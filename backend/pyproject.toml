@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ateable-downloader"
+version = "0.1.0"
+description = "Remote file and media downloads with a controller-only master"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "platformdirs>=4.3,<5",
+  "pydantic>=2.10,<3",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+worker = [
+  "boto3>=1.38,<2",
+  "imageio-ffmpeg>=0.6,<1",
+  "yt-dlp[default]>=2025.11.12,<2027",
+]
+desktop = [
+  "PySide6-Essentials>=6.8,<7",
+]
+test = [
+  "boto3>=1.38,<2",
+  "imageio-ffmpeg>=0.6,<1",
+  "yt-dlp[default]>=2025.11.12,<2027",
+  "httpx>=0.27,<1",
+  "pytest>=8.3,<10",
+  "pytest-asyncio>=0.24,<2",
+  "ruff>=0.11,<1",
+]
+
+[project.scripts]
+ateable = "ateable.cli:main"
+ateable-api = "ateable.api:main"
+ateable-desktop = "ateable.desktop:main"
+ateable-worker = "ateable.remote_worker:main"
+ateable-node = "ateable.participant:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ateable"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff.lint.isort]
+known-first-party = ["ateable"]
